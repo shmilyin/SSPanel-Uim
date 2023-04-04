@@ -226,6 +226,12 @@
                             <h3 class="card-title">连接设置</h3>
                         </div>
                         <div class="card-body">
+			    <div class="form-group mb-3 row">
+                                <label class="form-label col-3 col-form-label">UUID</label>
+                                <div class="col">
+                                    <input id="uuid" type="text" class="form-control" value="{$edit_user->uuid}">
+                                </div>
+                            </div>
                             <div class="form-group mb-3 row">
                                 <label class="form-label col-3 col-form-label">端口</label>
                                 <div class="col">

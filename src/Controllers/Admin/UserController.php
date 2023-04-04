@@ -34,6 +34,7 @@ final class UserController extends BaseController
             'reg_date' => '注册时间',
             'expire_in' => '账户过期',
             'class_expire' => '等级过期',
+            'uuid' => 'UUID',
         ],
         'create_dialog' => [
             [
@@ -86,6 +87,7 @@ final class UserController extends BaseController
         'node_speedlimit',
         'node_iplimit',
         'port',
+        'uuid',
         'passwd',
         'method',
         'forbidden_ip',
@@ -200,6 +202,7 @@ final class UserController extends BaseController
         $user->node_speedlimit = $request->getParam('node_speedlimit');
         $user->node_iplimit = $request->getParam('node_iplimit');
         $user->port = $request->getParam('port');
+        $user->uuid = $request->getParam('uuid');
         $user->passwd = $request->getParam('passwd');
         $user->method = $request->getParam('method');
         $user->forbidden_ip = str_replace(PHP_EOL, ',', $request->getParam('forbidden_ip'));
